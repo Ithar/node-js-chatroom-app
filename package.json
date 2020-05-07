@@ -1,0 +1,29 @@
+{
+  "name": "node-js-chatroom-app",
+  "version": "1.0.0",
+  "description": "A chat room application with socket.io",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ithar/node-js-chatroom-app"
+  },
+  "keywords": [],
+  "author": "Ithar Malik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ithar/node-js-chatroom-app/issues"
+  },
+  "homepage": "https://github.com/Ithar/node-js-chatroom-app#readme",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
