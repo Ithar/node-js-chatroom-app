@@ -40,10 +40,11 @@ const socketService = {
     
             socket.join(user.room)
     
+            const displayName = user.username.charAt(0).toUpperCase() + user.username.slice(1); 
             socket.emit('message', generateMessage('Admin', 'Welcome!'))
-            socket.broadcast.to(user.room).emit('message', generateMessage('Admin', `${user.username} has joined!`))
+            socket.broadcast.to(user.room).emit('message', generateMessage('Admin', `${displayName} joined the chatroom!`))
             io.to(user.room).emit('roomData', {
-                room: user.room,
+                room: user.room.toUpperCase(),
                 users: getUsersInRoom(user.room)
             })
     
@@ -65,7 +66,8 @@ const socketService = {
             const user = removeUser(socket.id)
     
             if (user) {
-                io.to(user.room).emit('message', generateMessage('Admin', `${user.username} has left!`))
+                const displayName = user.username.charAt(0).toUpperCase() + user.username.slice(1); 
+                io.to(user.room).emit('message', generateMessage('Admin', `${displayName} left the room!`))
                 io.to(user.room).emit('roomData', {
                     room: user.room,
                     users: getUsersInRoom(user.room)

@@ -44,9 +44,11 @@ http://localhost:3000
 
 [[ Heroku ]]
 
+https://node-js-chatroom-app-v1-0.herokuapp.com/ 
+
 ## Application Heroku
 
-> heroku create node-js-chatroom-app-v1.0
+> heroku create node-js-chatroom-app-v1-0
 
 > git push heroku master
 

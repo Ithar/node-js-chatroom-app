@@ -59,7 +59,7 @@ button:disabled {
 /* Join Page Styles */
 
 .centered-form {
-    background: #333744;
+    background: #99a3c4;
     width: 100vw;
     height: 100vh;   
     display: flex;
@@ -104,6 +104,7 @@ button:disabled {
     display: flex;
     flex-direction: column;
     max-height: 100vh;
+    background: #d4b4b4;
 }
 
 .chat__messages {
@@ -119,13 +120,14 @@ button:disabled {
 }
 
 .message__name {
-    font-weight: 600;
+    font-weight: 1000;
     font-size: 14px;
     margin-right: 8px;
 }
 
 .message__meta {
-    color: #777;
+    font-weight: 1000;
+    color: rgb(17, 90, 50);
     font-size: 14px;
 }
 
@@ -163,7 +165,7 @@ button:disabled {
 /* Chat Sidebar Styles */
 
 .room-title {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 22px;
     background: #2c2f3a;
     padding: 24px;   
@@ -178,8 +180,9 @@ button:disabled {
 
 .users {
     list-style-type: none;
-    font-weight: 300;
+    font-weight: 1000;
     padding: 12px 24px 0 24px;
+    color: rgb(55, 138, 92);
 }
 
 .map-icon {
@@ -187,3 +190,10 @@ button:disabled {
     height: 40px;
   }
 
+  .user__msg {
+    padding-left: 2%;
+  }
+
+  .user__displayname {
+    text-transform: capitalize;
+}
